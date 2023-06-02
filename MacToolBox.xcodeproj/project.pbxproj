@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A18425D2A298A2A00C56D55 /* MacToolBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18425C2A298A2A00C56D55 /* MacToolBoxApp.swift */; };
+		0A18425F2A298A2A00C56D55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18425E2A298A2A00C56D55 /* ContentView.swift */; };
+		0A1842612A298A2B00C56D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1842602A298A2B00C56D55 /* Assets.xcassets */; };
+		0A1842642A298A2B00C56D55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1842632A298A2B00C56D55 /* Preview Assets.xcassets */; };
+		0A18426C2A298BD100C56D55 /* DashedBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18426B2A298BD100C56D55 /* DashedBorderView.swift */; };
+		0A18426E2A298C0100C56D55 /* DropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18426D2A298C0100C56D55 /* DropImageView.swift */; };
+		0A1842702A298CE000C56D55 /* CodeRecognizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18426F2A298CE000C56D55 /* CodeRecognizeView.swift */; };
+		0A1842752A29C40900C56D55 /* ImageVisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1842742A29C40900C56D55 /* ImageVisionView.swift */; };
+		0A1842792A29C4C500C56D55 /* VisionAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1842782A29C4C500C56D55 /* VisionAgent.swift */; };
+		0A18427B2A29DFDE00C56D55 /* CodeRecognizeAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18427A2A29DFDE00C56D55 /* CodeRecognizeAgent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A1842592A298A2A00C56D55 /* MacToolBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacToolBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A18425C2A298A2A00C56D55 /* MacToolBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacToolBoxApp.swift; sourceTree = "<group>"; };
+		0A18425E2A298A2A00C56D55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A1842602A298A2B00C56D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A1842632A298A2B00C56D55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A1842652A298A2B00C56D55 /* MacToolBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacToolBox.entitlements; sourceTree = "<group>"; };
+		0A18426B2A298BD100C56D55 /* DashedBorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedBorderView.swift; sourceTree = "<group>"; };
+		0A18426D2A298C0100C56D55 /* DropImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropImageView.swift; sourceTree = "<group>"; };
+		0A18426F2A298CE000C56D55 /* CodeRecognizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRecognizeView.swift; sourceTree = "<group>"; };
+		0A1842742A29C40900C56D55 /* ImageVisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVisionView.swift; sourceTree = "<group>"; };
+		0A1842782A29C4C500C56D55 /* VisionAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionAgent.swift; sourceTree = "<group>"; };
+		0A18427A2A29DFDE00C56D55 /* CodeRecognizeAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRecognizeAgent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A1842562A298A2A00C56D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A1842502A298A2A00C56D55 = {
+			isa = PBXGroup;
+			children = (
+				0A18425B2A298A2A00C56D55 /* MacToolBox */,
+				0A18425A2A298A2A00C56D55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A18425A2A298A2A00C56D55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A1842592A298A2A00C56D55 /* MacToolBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A18425B2A298A2A00C56D55 /* MacToolBox */ = {
+			isa = PBXGroup;
+			children = (
+				0A18425C2A298A2A00C56D55 /* MacToolBoxApp.swift */,
+				0A18425E2A298A2A00C56D55 /* ContentView.swift */,
+				0A1842762A29C45C00C56D55 /* CodeRecognize */,
+				0A1842772A29C47300C56D55 /* ImageVision */,
+				0A1842602A298A2B00C56D55 /* Assets.xcassets */,
+				0A1842652A298A2B00C56D55 /* MacToolBox.entitlements */,
+				0A1842622A298A2B00C56D55 /* Preview Content */,
+			);
+			path = MacToolBox;
+			sourceTree = "<group>";
+		};
+		0A1842622A298A2B00C56D55 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0A1842632A298A2B00C56D55 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A1842762A29C45C00C56D55 /* CodeRecognize */ = {
+			isa = PBXGroup;
+			children = (
+				0A18426F2A298CE000C56D55 /* CodeRecognizeView.swift */,
+				0A18426B2A298BD100C56D55 /* DashedBorderView.swift */,
+				0A18426D2A298C0100C56D55 /* DropImageView.swift */,
+				0A18427A2A29DFDE00C56D55 /* CodeRecognizeAgent.swift */,
+			);
+			path = CodeRecognize;
+			sourceTree = "<group>";
+		};
+		0A1842772A29C47300C56D55 /* ImageVision */ = {
+			isa = PBXGroup;
+			children = (
+				0A1842742A29C40900C56D55 /* ImageVisionView.swift */,
+				0A1842782A29C4C500C56D55 /* VisionAgent.swift */,
+			);
+			path = ImageVision;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A1842582A298A2A00C56D55 /* MacToolBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A1842682A298A2B00C56D55 /* Build configuration list for PBXNativeTarget "MacToolBox" */;
+			buildPhases = (
+				0A1842552A298A2A00C56D55 /* Sources */,
+				0A1842562A298A2A00C56D55 /* Frameworks */,
+				0A1842572A298A2A00C56D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacToolBox;
+			productName = MacToolBox;
+			productReference = 0A1842592A298A2A00C56D55 /* MacToolBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A1842512A298A2A00C56D55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0A1842582A298A2A00C56D55 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 0A1842542A298A2A00C56D55 /* Build configuration list for PBXProject "MacToolBox" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A1842502A298A2A00C56D55;
+			productRefGroup = 0A18425A2A298A2A00C56D55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A1842582A298A2A00C56D55 /* MacToolBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A1842572A298A2A00C56D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1842642A298A2B00C56D55 /* Preview Assets.xcassets in Resources */,
+				0A1842612A298A2B00C56D55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A1842552A298A2A00C56D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1842702A298CE000C56D55 /* CodeRecognizeView.swift in Sources */,
+				0A18425F2A298A2A00C56D55 /* ContentView.swift in Sources */,
+				0A18425D2A298A2A00C56D55 /* MacToolBoxApp.swift in Sources */,
+				0A18427B2A29DFDE00C56D55 /* CodeRecognizeAgent.swift in Sources */,
+				0A1842752A29C40900C56D55 /* ImageVisionView.swift in Sources */,
+				0A18426E2A298C0100C56D55 /* DropImageView.swift in Sources */,
+				0A1842792A29C4C500C56D55 /* VisionAgent.swift in Sources */,
+				0A18426C2A298BD100C56D55 /* DashedBorderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0A1842662A298A2B00C56D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A1842672A298A2B00C56D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0A1842692A298A2B00C56D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacToolBox/MacToolBox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacToolBox/Preview Content\"";
+				DEVELOPMENT_TEAM = ZJTN8M3KZB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodick.MacToolBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0A18426A2A298A2B00C56D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacToolBox/MacToolBox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacToolBox/Preview Content\"";
+				DEVELOPMENT_TEAM = ZJTN8M3KZB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodick.MacToolBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A1842542A298A2A00C56D55 /* Build configuration list for PBXProject "MacToolBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A1842662A298A2B00C56D55 /* Debug */,
+				0A1842672A298A2B00C56D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A1842682A298A2B00C56D55 /* Build configuration list for PBXNativeTarget "MacToolBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A1842692A298A2B00C56D55 /* Debug */,
+				0A18426A2A298A2B00C56D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A1842512A298A2A00C56D55 /* Project object */;
+}
