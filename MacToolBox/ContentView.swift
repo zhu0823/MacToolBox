@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    
+    @State private var selection: Int? = 0
+    
     var body: some View {
         NavigationView {
-            List {
+            List(selection: $selection) {
                 NavigationLink(destination: CodeRecognizeView()) {
                     Text("识别二维码")
                 }
@@ -22,7 +24,11 @@ struct ContentView: View {
                     Text("识图生字")
                 }
             }
+            .padding([.top])
             .listStyle(SidebarListStyle())
+            .onAppear {
+                selection = 1
+            }
         }
     }
 }
