@@ -17,6 +17,8 @@
 		0A1842752A29C40900C56D55 /* ImageVisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1842742A29C40900C56D55 /* ImageVisionView.swift */; };
 		0A1842792A29C4C500C56D55 /* VisionAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1842782A29C4C500C56D55 /* VisionAgent.swift */; };
 		0A18427B2A29DFDE00C56D55 /* CodeRecognizeAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18427A2A29DFDE00C56D55 /* CodeRecognizeAgent.swift */; };
+		0AD7E8682A3C67F8005C4938 /* NetworkStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD7E8672A3C67F8005C4938 /* NetworkStatsView.swift */; };
+		0AD7E86A2A3C6936005C4938 /* NetworkStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD7E8692A3C6936005C4938 /* NetworkStats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		0A1842742A29C40900C56D55 /* ImageVisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVisionView.swift; sourceTree = "<group>"; };
 		0A1842782A29C4C500C56D55 /* VisionAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionAgent.swift; sourceTree = "<group>"; };
 		0A18427A2A29DFDE00C56D55 /* CodeRecognizeAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRecognizeAgent.swift; sourceTree = "<group>"; };
+		0AD7E8672A3C67F8005C4938 /* NetworkStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatsView.swift; sourceTree = "<group>"; };
+		0AD7E8692A3C6936005C4938 /* NetworkStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 				0A18425E2A298A2A00C56D55 /* ContentView.swift */,
 				0A1842762A29C45C00C56D55 /* CodeRecognize */,
 				0A1842772A29C47300C56D55 /* ImageVision */,
+				0AD7E8662A3C67D2005C4938 /* NetworkStats */,
 				0A1842602A298A2B00C56D55 /* Assets.xcassets */,
 				0A1842652A298A2B00C56D55 /* MacToolBox.entitlements */,
 				0A1842622A298A2B00C56D55 /* Preview Content */,
@@ -101,6 +106,15 @@
 				0A1842782A29C4C500C56D55 /* VisionAgent.swift */,
 			);
 			path = ImageVision;
+			sourceTree = "<group>";
+		};
+		0AD7E8662A3C67D2005C4938 /* NetworkStats */ = {
+			isa = PBXGroup;
+			children = (
+				0AD7E8672A3C67F8005C4938 /* NetworkStatsView.swift */,
+				0AD7E8692A3C6936005C4938 /* NetworkStats.swift */,
+			);
+			path = NetworkStats;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +192,10 @@
 				0A18425D2A298A2A00C56D55 /* MacToolBoxApp.swift in Sources */,
 				0A18427B2A29DFDE00C56D55 /* CodeRecognizeAgent.swift in Sources */,
 				0A1842752A29C40900C56D55 /* ImageVisionView.swift in Sources */,
+				0AD7E8682A3C67F8005C4938 /* NetworkStatsView.swift in Sources */,
 				0A18426E2A298C0100C56D55 /* DropImageView.swift in Sources */,
 				0A1842792A29C4C500C56D55 /* VisionAgent.swift in Sources */,
+				0AD7E86A2A3C6936005C4938 /* NetworkStats.swift in Sources */,
 				0A18426C2A298BD100C56D55 /* DashedBorderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +331,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Mac工具箱";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -343,6 +360,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Mac工具箱";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

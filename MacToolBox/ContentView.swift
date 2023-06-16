@@ -23,13 +23,40 @@ struct ContentView: View {
                 NavigationLink(destination: ImageVisionView()) {
                     Text("识图生字")
                 }
+                NavigationLink(destination: NetworkStatsView()) {
+                    Text("网速监控")
+                }
             }
             .padding([.top])
             .listStyle(SidebarListStyle())
             .onAppear {
-                selection = 1
+                NSEvent.addLocalMonitorForEvents(matching: .keyDown) { event in
+                    print(event.modifierFlags, " ", event.keyCode)
+                    return handleKeyboardEvent(event)
+                }
             }
         }
+    }
+    
+    
+    /// 处理键盘快捷键
+    /// - Parameter event: event description
+    /// - Returns: description
+    func handleKeyboardEvent(_ event: NSEvent) -> NSEvent? {
+        if event.modifierFlags.contains(.command) {
+            switch event.keyCode {
+            case 18:
+                selection = 0
+            case 19:
+                selection = 1
+            case 20:
+                selection = 2
+            default:
+                return event
+            }
+            return nil
+        }
+        return event
     }
 }
 
