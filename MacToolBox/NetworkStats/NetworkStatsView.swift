@@ -10,36 +10,35 @@ import Cocoa
 
 struct NetworkStatsView: View {
     
-    @State private var networkSpeed = "0kB/s"
+    @State private var statusBarSpeed = "0K 0K"
     
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     
     let queue = DispatchQueue(label: "com.goodick.networkspeed")
     
+    let monitor = NetworkMonitor()
+    
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        Text(statusBarSpeed)
             .onAppear {
                 
-                statusItem.button?.title = networkSpeed
+                statusItem.button?.title = statusBarSpeed
                 
                 Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
-                    print(timer)
                     updateNetworkSpeed()
-                    statusItem.button?.title = networkSpeed
+                    statusItem.button?.title = statusBarSpeed
                 }.tolerance = 0.1
-                
             }
     }
     
     func updateNetworkSpeed() {
-        print("updateNetworkSpeed")
+        
         queue.async {
-            print("async")
-            let stats = NetworkStats.getNetworkStats()
+            let stats = monitor.getNetworkStats(.short)
             DispatchQueue.main.async {
-                networkSpeed = "\(stats.downloadSpeed)KB/s ↓ \(stats.uploadSpeed)KB/s ↑"
-                print(networkSpeed)
+//                networkSpeed = "\(stats.upload) ↑\n\(stats.download) ↓"
+                statusBarSpeed = "\(stats.upload.replacingOccurrences(of: " ", with: "")) \(stats.download.replacingOccurrences(of: " ", with: ""))"
+                print(statusBarSpeed + "\n")
             }
         }
     }
