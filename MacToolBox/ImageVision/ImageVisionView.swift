@@ -51,16 +51,16 @@ struct ImageVisionView: View {
         
         self.image = image
         
-        let result = ImageAgent.shared.showSupportsLanguages()
-        print("showSupportsLanguages:", result)
-        
-        ImageAgent.shared.loadImage(image) { text in
+        let request = ImageAgent.shared.loadImage(image) { text in
             print("loadImage:", text ?? "")
             if let text = text {
                 self.text = text
             }
         }
-
+        if let request = request {
+            let result = ImageAgent.shared.showSupportsLanguages(request: request)
+            print("showSupportsLanguages:", result)
+        }
     }
 }
 

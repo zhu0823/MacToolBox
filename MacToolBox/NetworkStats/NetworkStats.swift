@@ -65,8 +65,8 @@ class NetworkMonitor {
                 
                 if sentBytes != 0 && receivedBytes != 0 {
                     
-                    currentSent = Double(sentBytes - prevSent)
-                    currentReceived = Double(receivedBytes - prevReceived)
+                    currentSent = prevSent == 0 ? 0.0 : Double(sentBytes - prevSent)
+                    currentReceived = prevReceived == 0 ? 0.0 : Double(receivedBytes - prevReceived)
                     
                     print(sentBytes, receivedBytes)
                     print(currentSent, currentReceived)

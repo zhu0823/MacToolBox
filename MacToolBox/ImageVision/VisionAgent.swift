@@ -15,11 +15,10 @@ class ImageAgent {
     
     var languages: [String] = ["zh-Hans"]
     
-    
-    func loadImage(_ image: NSImage?, completion: @escaping (_ text: String?) -> Void) {
+    func loadImage(_ image: NSImage?, completion: @escaping (_ text: String?) -> Void) -> VNRecognizeTextRequest? {
         guard let image = image?.cgImage(forProposedRect: nil, context: nil, hints: nil) else {
             completion(nil)
-            return
+            return nil
         }
         
         let request = VNRecognizeTextRequest { request, error in
@@ -39,6 +38,8 @@ class ImageAgent {
         request.recognitionLevel = .accurate
         
         performDetection(request: request, image: image)
+        
+        return request
     }
     
     func performDetection(request: VNRecognizeTextRequest, image: CGImage) {
@@ -78,10 +79,9 @@ class ImageAgent {
     
     /// 所有支持语言
     /// - Returns: 语言合集
-    func showSupportsLanguages() -> [String] {
+    func showSupportsLanguages(request: VNRecognizeTextRequest) -> [String] {
         do {
-            let revision = VNRecognizeTextRequest.supportedRevisions.last
-            let supportsLanguages = try VNRecognizeTextRequest.supportedRecognitionLanguages(for: .accurate, revision: revision ?? 2)
+            let supportsLanguages = try request.supportedRecognitionLanguages()
             return supportsLanguages
         } catch  {
             print("showSupportsLanguages Error:", error)
